@@ -5,19 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne={
-    title:'Article-one | Rusheel Panakkadan',
-    heading:'Article-one',
-    date:' August 9,Wednesday,2017.',
-    content:`
-            <p> 
-            I am Rusheel Panakkadan studying Computer Science Engg in Veltech University.I m glad you are reading my article :)
-            </p>
-            <p>
-            I m interested in Networks and Security,and ofcourse hacking. hehe :)
-            
-            </p>`
-};
+
 
 
 
