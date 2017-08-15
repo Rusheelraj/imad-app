@@ -18,52 +18,6 @@ var articleOne={
             
             </p>`
 };
-function createTemplate (data){
-    var title = data.title;
-    var date =data.date;
-    var heading=data.heading;
-    var content=data.content;
- var htmlTemplate = `
-    <html>
-    <head>
-        <title> ${title}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link href="/ui/style.css" rel="stylesheet" />
-        
-   
-        
-    </head>
-    
-    <body>
-        
-        <div class="container">
-        <div>
-            
-            <a href="/">Home</a>
-        </div>
-         <hr/>
-    
-        <h3>
-        ${heading}
-        </h3>
-        
-        <div>
-         ${date}
-        </div>
-    
-        <div> 
-        
-        ${content} 
-        </div>
-        </div>
-    </body>
-</html>
-
-    
-`;
-return htmlTemplate;
-}
-
 
 
 
@@ -83,19 +37,10 @@ app.get('/counter', function(req,res){
 
 
 
-app.get('/article-one', function (req,res){
- res.send(createTemplate(articleOne));
-});
 
 
-app.get('/article-three', function (req,res){
- res.send('Article three is requested and served');
-});
 
 
-app.get('/article-two', function (req,res){
- res.send('Article two is requested and served');
-});
 
 
 app.get('/ui/style.css', function (req, res) {
