@@ -1,6 +1,21 @@
-body{
-    color:black;
-    background-image: url("https://wwvalue.com/ct/2017/03/free-vector-textures-backgrounds-high-quality-02.jpg"); 
-    font-style:Arial
-Verdana;
+body {
+    font-family: sans-serif;
+    background-color: lightgrey;
+    margin-top: 75px;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-big {
+    font-size: 300%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.img-medium {
+    height: 200px;
 }
